@@ -1,0 +1,88 @@
+# This is the configuration file for the example website of the Hugo theme
+# Astatine (see https://github.com/hugcis/hugo-astatine-theme).
+#
+# The URL from which the site will be served
+baseurl = "https://moekookada.github.io/"
+# Language used
+languageCode = "en-us"
+# Website title
+title = "Moeko Okada"
+# Theme used
+theme = "astatine"
+
+publishDir = "docs"
+canonifyurls = true
+
+preserveTaxonomyNames = true
+rssLimit = 10
+paginate = 10
+
+# Code highlighting
+pygmentsCodefences = true
+pygmentsStyle = "native"
+
+# Taxonomies (only tags and categories are supported out of the box but you can
+# add more)
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+# Configure permalinks style
+[permalinks]
+    post = "/:slug/"
+    page = "/:slug/"
+
+# Configure main navbar links. They can have a weight to select the order.
+# This links to content within the content/post/ folder
+[[menu.main]]
+    name = "Posts"
+    url = "/post/"
+    weight = -150
+
+# This links to the page about.md
+[[menu.main]]
+    name = "Profile"
+    url = "/about/"
+    weight = -110
+
+# Make the publications and presentations pages accessible directly from the navbar.
+[[menu.main]]
+    name = "Presentations"
+    url = "/presentations/"
+    weight = -120
+
+[[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = -130
+
+# Site wide params and SEO
+[params]
+    # Site description. Individual pages can have descriptions too but if
+    # missing it will fallback to that one.
+    description = ""
+    # Author of the site
+    authorName = "Moeko Okada Powered by Hugo and Astatine"
+    # Main image for the author. This will be the default image for SEO.
+    [params.imgname]
+        name = "img/AegilopsUmbellulata.png"
+        # Add an alt description for the image
+        alt = "Profile picture"
+
+    # Indicate if you host Katex yourself. Defaults to using the CDN KaTex.
+    # hostedKaTex = false
+
+    # Optional: add a twitter handle and mastodon handle for SEO.
+    [params.twitter]
+        name = "@moko_13_ts"
+
+    # Enable link to feed in footer
+    blogrss = true
+
+    # Enable pingback and webmention via webmention.io
+    # webmention = "hugocisneros.com"
+
+
+# Sitemap location (default is /sitemap.xml)
+[sitemap]
+  filename = "sitemap.xml"
