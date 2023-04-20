@@ -37,24 +37,24 @@ pygmentsStyle = "native"
 [[menu.main]]
     name = "Posts"
     url = "/post/"
-    weight = -110
+    weight = 40
 
 # This links to the page about.md
 [[menu.main]]
     name = "Profile"
     url = "/about/"
-    weight = -150
+    weight = 10
 
 # Make the publications and presentations pages accessible directly from the navbar.
 [[menu.main]]
     name = "Presentations"
     url = "/presentations/"
-    weight = -120
+    weight = 30
 
 [[menu.main]]
     name = "Publications"
     url = "/publications/"
-    weight = -130
+    weight = 20
 
 # Site wide params and SEO
 [params]
