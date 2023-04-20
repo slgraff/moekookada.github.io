@@ -13,8 +13,6 @@ theme = "astatine"
 publishDir = "docs"
 canonifyurls = true
 
-Cache-Conrtol = no-cache
-
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
