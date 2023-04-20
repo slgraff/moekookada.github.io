@@ -34,6 +34,7 @@ pygmentsStyle = "native"
 
 # Configure main navbar links. They can have a weight to select the order.
 # This links to content within the content/post/ folder
+[menu]
 [[menu.main]]
     name = "Posts"
     url = "/post/"
